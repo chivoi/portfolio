@@ -1,5 +1,4 @@
 @import "normalize.css";
-
 body {
   background-image: url("../images/bg.jpg");
   background-color: #ffeefa;
@@ -9,9 +8,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-   }
-
-// Navigation
+}
 
 .nav-header {
   display: flex;
@@ -33,25 +30,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  a {
-      color:  #141439;
-      text-decoration: none;
-      font-size: 0.75rem;
-      padding-right: 1rem;
-      // border-right: 0.5px dotted #141439;
-  }
-  
-  a:hover {
-      color: pink;
-      text-decoration: underline;
-  }
 }
-
-// #home {
-//   // border-left: 0.5px dotted #141439;
-//   padding-left: 1rem;
-// }
+.nav-items a {
+  color: #141439;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding-right: 1rem;
+}
+.nav-items a:hover {
+  color: pink;
+  text-decoration: underline;
+}
 
 .main-text {
   display: flex;
@@ -63,7 +52,7 @@ body {
 
 .works-button {
   border-radius: 10px;
-  border: 1px solid  #3f4064;
+  border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
   background-color: #3f4064;
@@ -74,3 +63,5 @@ body {
 h2 {
   background-color: rgba(255, 255, 255, 0.75);
 }
+
+/*# sourceMappingURL=styles.css.map */
