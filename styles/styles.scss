@@ -1,19 +1,33 @@
 @import "normalize.css";
+@import "external-fonts";
+@import "mixins";
+@import "variables";
 
 body {
   background-image: url("../images/bg.jpg");
-  background-color: #ffeefa;
+  background-color: $base-light-color;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-   }
+}
+
+.box {
+  margin: 2rem 16rem;
+  width: 130vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 // Navigation
 
 .nav-header {
+  @include base-text;
   display: flex;
   height: 10vh;
   justify-content: space-between;
@@ -62,6 +76,7 @@ body {
 }
 
 .main-text {
+  @include base-text;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,34 +85,13 @@ body {
 }
 
 .works-button {
-  border-radius: 10px;
-  border: 1px solid  #3f4064;
-  height: 2rem;
-  width: fit-content;
-  background-color:#141439;
-  margin-top: 1.75rem;
-
-  a {
-    color: #ffeefa;
-    font-size: 1.20em;
-    text-decoration: none;
-  }
-
+  @include button;
+  @include base-text($font-weight:bold);
+   margin-top: 1.5rem;
 }
 
 .works-button:hover {
-  background-color: #ffeefa;
-  transition: 0.5s;
-  transform: translateY(-2px);
-  box-shadow: 2px 2px 2px #aaaaaa;
-  border: 1px solid #141439;
-  
-  a {
-    color:#141439;
-    font-size: 1.20em;
-    text-decoration: none;
-  }
-
+  @include button-hover;
 }
 
 h2 {
@@ -106,4 +100,96 @@ h2 {
 
 h1, h2 {
   color: #141439;
+}
+
+//Contact page
+
+.form-contents {
+  @include base-text;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80vh;
+}
+
+.form-contents label {
+  padding-bottom: 10px;
+}
+
+.form-contents input {
+  height: 2em;
+}
+
+.contact-name, .contact-message, .contact-email, .contact-submit {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  @include base-text($font-weight: bold);
+  border-radius: 10px;
+  border: 1px solid #3f4064;
+  height: 2rem;
+  width: fit-content;
+  background-color: #3f4064;
+  color: $base-light-color;
+}
+
+.submit-button:hover {
+  background-color: $base-light-color;
+  color: #141439;
+  transition: 0.5s;
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px #aaaaaa;
+  border: 1px solid #141439;
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+}
+
+input::placeholder {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #bbb8b8;
+}
+
+textarea::placeholder {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #bbb8b8;
+}
+
+//About me
+
+.box img {
+  // position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.text-area {
+  @include base-text($font-size:20px);
+  background-color: rgba(255, 255, 255, 0.80);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-button {
+  @include button;
+  @include base-text($font-weight:bold);
+}
+
+.contact-button:hover {
+  @include button-hover;
 }
