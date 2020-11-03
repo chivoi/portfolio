@@ -15,6 +15,7 @@ body {
 }
 
 .box {
+  @include base-text;
   margin: 2rem 16rem;
   width: 130vh;
   display: flex;

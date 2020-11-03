@@ -26,6 +26,10 @@ body {
 }
 
 .box {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   width: 130vh;
   display: flex;
