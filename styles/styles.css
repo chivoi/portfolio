@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.05em;
   margin: 2rem 16rem;
-  width: 130vh;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -98,22 +98,7 @@ body {
 }
 
 .works-button {
-  border-radius: 10px;
-  border: 1px solid #3f4064;
-  height: 2rem;
-  width: fit-content;
-  background-color: #141439;
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
   margin-top: 1.5rem;
-}
-.works-button a {
-  color: #ffeefa;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .works-button:hover {
@@ -205,7 +190,7 @@ textarea::placeholder {
   color: #bbb8b8;
 }
 
-.box img {
+.profile-pic {
   width: 300px;
   height: 300px;
   overflow: hidden;
@@ -219,12 +204,18 @@ textarea::placeholder {
   font-weight: 400;
   letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1rem;
+  padding: 0.01em 1em;
   display: flex;
   flex-direction: column;
 }
+.text-area p {
+  margin: 0.5em;
+}
+.text-area button {
+  align-self: center;
+}
 
-.contact-button {
+.link-button, .works-button {
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
@@ -235,24 +226,40 @@ textarea::placeholder {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.contact-button a {
+.link-button a, .works-button a {
   color: #ffeefa;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
 }
 
-.contact-button:hover {
+.link-button:hover, .works-button:hover {
   background-color: #ffeefa;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
-.contact-button:hover a {
+.link-button:hover a, .works-button:hover a {
   color: #141439;
   font-size: 1.2em;
   text-decoration: none;
+}
+
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.skills-icons img {
+  width: 45px;
+  height: 45px;
+  margin-left: 0.3em;
+}
+
+#rails {
+  width: 6.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

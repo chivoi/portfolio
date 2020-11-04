@@ -12,12 +12,17 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .box {
   @include base-text;
   margin: 2rem 16rem;
-  width: 130vh;
+  border-radius: 15px;
+  // width: 130vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -86,8 +91,7 @@ body {
 }
 
 .works-button {
-  @include button;
-  @include base-text($font-weight:bold);
+  @extend .link-button;
    margin-top: 1.5rem;
 }
 
@@ -169,7 +173,7 @@ textarea::placeholder {
 
 //About me
 
-.box img {
+.profile-pic {
   // position: relative;
   width: 300px;
   height: 300px;
@@ -181,16 +185,43 @@ textarea::placeholder {
 .text-area {
   @include base-text($font-size:20px);
   background-color: rgba(255, 255, 255, 0.80);
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
+  padding: 0.01em 1em;
   display: flex;
   flex-direction: column;
+
+  p {
+    margin: 0.5em;
+  }
+
+  button {
+    align-self: center;
+  }
 }
 
-.contact-button {
+.link-button {
   @include button;
   @include base-text($font-weight:bold);
 }
 
-.contact-button:hover {
+.link-button:hover {
   @include button-hover;
+}
+
+//Resume
+
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  img {
+    width: 45px;
+    height: 45px;
+    margin-left: 0.3em;
+  }
+}
+
+#rails {
+  width: 6.5rem;
 }
