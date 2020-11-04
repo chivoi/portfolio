@@ -25,7 +25,7 @@ body {
   -o-background-size: cover;
 }
 
-.box {
+.box, .blog-box {
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
@@ -112,10 +112,6 @@ body {
   color: #141439;
   font-size: 1.2em;
   text-decoration: none;
-}
-
-h2 {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 h1, h2 {
@@ -253,13 +249,59 @@ textarea::placeholder {
   align-self: center;
 }
 .skills-icons img {
-  width: 45px;
+  width: 50px;
   height: 45px;
   margin-left: 0.3em;
 }
 
 #rails {
-  width: 6.5rem;
+  width: 7rem;
+}
+
+.blog-box {
+  margin: 2rem 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.blog-box img {
+  width: 400px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+.blog-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.blog-previews img {
+  width: 400px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 65vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.preview p, .preview h2 {
+  margin: 5px 20px 15px 20px;
+}
+.preview a {
+  text-decoration: none;
+  color: #141439;
+}
+
+.preview:hover {
+  opacity: 0.9;
+  background-color: rgba(255, 238, 250, 0.9);
 }
 
 /*# sourceMappingURL=styles.css.map */

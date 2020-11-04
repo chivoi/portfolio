@@ -99,9 +99,9 @@ body {
   @include button-hover;
 }
 
-h2 {
-  background-color: rgba(255, 255, 255, 0.75);
-}
+// h2 {
+//   background-color: rgba(255, 255, 255, 0.75);
+// }
 
 h1, h2 {
   color: #141439;
@@ -216,12 +216,61 @@ textarea::placeholder {
   flex-wrap: wrap;
   align-self: center;
   img {
-    width: 45px;
+    width: 50px;
     height: 45px;
     margin-left: 0.3em;
   }
 }
 
 #rails {
-  width: 6.5rem;
+  width: 7rem;
+}
+
+//Blog
+
+.blog-box {
+  @extend .box;
+  margin: 2rem 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  img {
+    width: 400px;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+}
+
+.blog-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  img {
+    width: 400px;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 65vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  p, h2 {
+    margin: 5px 20px 15px 20px;
+  }
+  a {
+    text-decoration: none;
+    color: $base-dark-color;
+  }
+}
+
+.preview:hover {
+  opacity: 0.9;
+  background-color:rgba(255,238,250, 0.9);
 }
