@@ -40,12 +40,6 @@ body {
   margin: 0.5em 1.5em;
 }
 
-.nav-socials img {
-  width: 50px;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-socials {
   display: flex;
 
@@ -53,7 +47,12 @@ body {
     transition: 0.3s;
     transform: translateY(-2px);
     filter: drop-shadow(1px 2px #aaaaaa);
-    // box-shadow: 2px 2px 2px #aaaaaa;
+  }
+
+  img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -184,11 +183,12 @@ textarea::placeholder {
 
 .text-area {
   @include base-text($font-size:20px);
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.85);
   // margin-bottom: 1rem;
   padding: 0.01em 1em;
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
 
   p {
     margin: 0.5em;
@@ -263,6 +263,7 @@ textarea::placeholder {
   margin-bottom: 15px;
   p, h2 {
     margin: 5px 20px 15px 20px;
+    color: $base-dark-color;
   }
   a {
     text-decoration: none;
@@ -274,3 +275,48 @@ textarea::placeholder {
   opacity: 0.9;
   background-color:rgba(255,238,250, 0.9);
 }
+
+.category {
+  @include base-text($font-weight:bold);
+  color: #f6e2fe;
+  background-color: #3f4064;
+  border: 1px dotted $base-light-color;
+  border-radius: 7px;
+}
+
+.category-date {
+  text-align: right;
+}
+
+// Blog posts
+
+.blog-post-img {
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.category-date-blogpost {
+  @extend .category-date;
+  display: inline;
+  align-self: flex-end;
+  margin: 10px 0;
+}
+
+//blog-navigation
+
+.blog-nav {
+  @extend .nav-socials;
+  @extend .box;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  img {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  img:hover {
+    filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px $base-dark-color);
+  }
+}
+
