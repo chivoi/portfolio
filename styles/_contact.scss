@@ -1,0 +1,51 @@
+//Contact page
+
+.form-contents {
+  @include base-text;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80vh;
+  label {
+    padding-bottom: 10px;
+  }
+  input {
+    height: 2em;
+    &::placeholder {
+      font-family: "Quicksand";
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #bbb8b8;
+    }
+  }
+  textarea::placeholder {
+    font-family: "Quicksand";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #bbb8b8;
+  }
+}
+
+//These are form sections in each separate container
+.contact-name, .contact-message, .contact-email, .contact-submit {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  @include button($background-color:#3f4064);
+  @include base-text($font-weight:bold);
+  color: $base-light-color;
+  &:hover {
+    color: #141439;
+  }
+}
+
+// Container with just the submit button to make it centered relative to the whole form
+.contact-submit {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+//Index page
+
+.main-text {
+  @include base-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.works-button {
+  @include button;
+   margin-top: 1.5rem;
+}
+
+h1, h2 {
+  color: #141439;
+}

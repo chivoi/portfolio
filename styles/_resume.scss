@@ -1,0 +1,23 @@
+//Resume page
+
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  img {
+    width: 50px;
+    height: 45px;
+    margin-left: 0.3em;
+  }
+}
+
+#rails {
+  width: 7rem;
+}
+
+.getintouch-button {
+  @include base-text;
+  @include button;
+  margin-bottom: 1rem;
+}

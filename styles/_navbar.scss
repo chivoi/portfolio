@@ -1,0 +1,46 @@
+// Main navigation bar
+
+.nav-header {
+  @include base-text;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  margin: 0.5em 1.5em;
+}
+
+// Social networking icons
+.nav-socials {
+  display: flex;
+  a:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+    filter: drop-shadow(2px 2px #aaaaaa);
+  }
+  img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Navigation menu
+.nav-items {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color:  #141439;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 1.20em;
+    &:hover{
+      color: white;
+      transition: 0.3s;
+      transform: translateY(-2px);
+      text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px #141439;
+      // text-shadow: 1px 1px #3f4064;
+      transition-timing-function: ease-out;
+    }
+  }
+}

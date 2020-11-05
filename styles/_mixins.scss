@@ -20,30 +20,42 @@
   padding-bottom: 10px;
 }
 
-@mixin button { 
+@mixin button($background-color: #141439) { 
     border-radius: 10px;
     border: 1px solid  #3f4064;
     height: 2rem;
     width: fit-content;
-    background-color:#141439;
+    background-color: $background-color;
+
+    &:hover {
+      background-color: $base-light-color;
+      transition: 0.5s;
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 2px #aaaaaa;
+      border: 1px solid $base-dark-color;
+    }
+
     a {
       color: $base-light-color;
       font-size: 1.20em;
       font-weight: bold;
       text-decoration: none;
+
+      &:hover {
+        color: $base-dark-color;
+        font-size: 1.20em;
+        text-decoration: none;
+      }
     }
 }
 
-@mixin button-hover {
-  background-color: $base-light-color;
-  transition: 0.5s;
-  transform: translateY(-2px);
-  box-shadow: 2px 2px 2px #aaaaaa;
-  border: 1px solid #141439;
-  
-  a {
-    color:#141439;
-    font-size: 1.20em;
-    text-decoration: none;
-  }
+@mixin box($margin: 2rem 16rem) {
+  @include base-text;
+  margin: $margin;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }

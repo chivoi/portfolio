@@ -1,0 +1,17 @@
+//Background for all pages 
+body {
+  background-image: url("../images/bg.jpg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+// Main content container on most of the pages
+.box {
+  @include base-text;
+  @include box;
+}
