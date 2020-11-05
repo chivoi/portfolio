@@ -59,3 +59,14 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin loose-link ($font-size: 20px) {
+  @include base-text($font-weight: bold);
+  font-size: $font-size;
+  text-decoration: none;
+  color: $blue;
+  &:hover {
+    text-decoration: underline;
+    color: rgb(97, 0, 141);
+  }
+}

@@ -1,0 +1,74 @@
+// Projects page
+
+.projects-box {
+  @include box($margin: 2rem 5rem);
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.project-preview-odd {
+  height: 315px;
+  display: flex;
+  flex-direction: row;
+  background-color: $text-bg-color;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  img {
+    width: 500px;
+    overflow: hidden;
+    margin: 0 0.5rem;
+    border-radius: 15px;
+    &:hover{
+      opacity: 0.85;
+    }
+  }
+  a {
+    @include base-text($font-weight: bold);
+    @include loose-link;
+    }
+
+    #portfolio-image {
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+}
+
+.project-preview-even {
+  @extend .project-preview-odd;
+  flex-direction: row-reverse;
+}
+
+.text-description {
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+}
+
+.heading-icons {
+  display: inline;
+}
+
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.3em;
+    &:hover {
+      opacity: inherit;
+    }
+  }
+}

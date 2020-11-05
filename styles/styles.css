@@ -314,6 +314,19 @@ body {
 .text-area button {
   align-self: center;
 }
+.text-area a {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  text-decoration: none;
+  color: #4359bd;
+}
+.text-area a:hover {
+  text-decoration: underline;
+  color: #61008d;
+}
 
 .link-button {
   border-radius: 10px;
@@ -391,6 +404,98 @@ body {
   color: #141439;
   font-size: 1.2em;
   text-decoration: none;
+}
+
+.projects-box {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 2rem 5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.project-preview-odd, .project-preview-even {
+  height: 315px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+}
+.project-preview-odd img, .project-preview-even img {
+  width: 500px;
+  overflow: hidden;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+}
+.project-preview-odd img:hover, .project-preview-even img:hover {
+  opacity: 0.85;
+}
+.project-preview-odd a, .project-preview-even a {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  text-decoration: none;
+  color: #4359bd;
+}
+.project-preview-odd a:hover, .project-preview-even a:hover {
+  text-decoration: underline;
+  color: #61008d;
+}
+.project-preview-odd #portfolio-image:hover, .project-preview-even #portfolio-image:hover {
+  opacity: 0.75;
+}
+
+.project-preview-even {
+  flex-direction: row-reverse;
+}
+
+.text-description {
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+}
+
+.heading-icons {
+  display: inline;
+}
+
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+.project-icons img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.3em;
+}
+.project-icons img:hover {
+  opacity: inherit;
 }
 
 @font-face {
