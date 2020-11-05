@@ -15,3 +15,20 @@ body {
   @include base-text;
   @include box;
 }
+
+footer {
+  @include box($margin: 0 2em);
+  height: 7vh;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include base-text($font-size: 13px);
+  p {
+    display: inline-block;
+    height: 1.5em;
+    padding-top: 0.5em;
+    background-color: $text-bg-color;
+    width: fit-content;
+    border-radius: 10px;
+  }
+}

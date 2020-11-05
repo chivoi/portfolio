@@ -213,6 +213,36 @@ body {
   justify-content: center;
 }
 
+footer {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0 2em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: "Quicksand";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+footer p {
+  display: inline-block;
+  height: 1.5em;
+  padding-top: 0.5em;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: fit-content;
+  border-radius: 10px;
+}
+
 .form-contents {
   font-family: "Quicksand";
   font-size: 18px;
