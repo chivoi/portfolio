@@ -7,13 +7,14 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
+
+  h1, h2 {
+    color: #141439;
+    text-align: center;
+  }
 }
 
 .works-button {
   @include button;
    margin-top: 1.5rem;
-}
-
-h1, h2 {
-  color: #141439;
 }

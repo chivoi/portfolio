@@ -23,13 +23,18 @@
   }
 }
 
-// Navigation menu
-.nav-items {
+// Navigation menu - desktop
+.menu {
   width: 65%;
+  margin-top: 1rem;
+}
+
+.menu-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   a {
+    clear: right;
     color:  #141439;
     text-decoration: none;
     padding-right: 1rem;
@@ -44,4 +49,49 @@
     }
   }
 }
-  
+
+// Hamburger menu
+
+label {
+  width: 26px;
+  float: right;
+  margin: 0 0.5rem 0 0;
+  font-size: 26px;
+  line-height: 1.5rem;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu-items {
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .menu-items {
+      position: fixed;
+      left: 0;
+      top: 0;
+      opacity: 1;
+      // z-index: 10;
+      background-color: $base-light-color;
+      text-align: center;
+      height: 70%;
+      width: 100%;
+      display: none;
+      a {
+        display: block;
+        border-bottom: 1px dotted $dirty-purple;
+        padding: 1rem;
+      }
+  }
+  label {
+    display: block;
+    position: relative;
+    z-index: 11;
+    cursor: pointer;
+  }
+}
+

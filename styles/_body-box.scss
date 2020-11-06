@@ -17,18 +17,18 @@ body {
 }
 
 footer {
-  @include box($margin: 0 2em);
-  height: 7vh;
+  height: 17vh;
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   @include base-text($font-size: 13px);
   p {
-    display: inline-block;
+    display: inline;
+    float: right;
     height: 1.5em;
-    padding-top: 0.5em;
+    padding: 0.2em 0.2em 0 0.2em;
     background-color: $text-bg-color;
-    width: fit-content;
     border-radius: 10px;
   }
 }
