@@ -4,10 +4,17 @@
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
+  margin: 1rem 1rem;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   height: 70vh;
 }
 .main-text h1, .main-text h2 {
@@ -211,17 +218,16 @@ label {
     position: fixed;
     left: 0;
     top: 0;
-    opacity: 1;
+    z-index: 10;
     background-color: #ffeefa;
     text-align: center;
-    height: 70%;
     width: 100%;
     display: none;
   }
   .menu-items a {
     display: block;
-    border-bottom: 1px dotted #3f4064;
     padding: 1rem;
+    margin-top: 1rem;
   }
 
   label {
@@ -261,7 +267,7 @@ body {
 }
 
 footer {
-  height: 17vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -272,12 +278,31 @@ footer {
   letter-spacing: 0.05em;
 }
 footer p {
-  display: inline;
-  float: right;
+  display: inline-block;
   height: 1.5em;
   padding: 0.2em 0.2em 0 0.2em;
+  margin: 0 1rem 1rem 0;
   background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 10px;
+  border-radius: 7px;
+}
+
+.contact-box {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 2rem 5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  height: 70vh;
 }
 
 .form-contents {
@@ -288,7 +313,7 @@ footer p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 80vh;
+  width: 60%;
 }
 .form-contents label {
   padding-bottom: 10px;
@@ -405,7 +430,7 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.05em;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .link-button:hover {
   background-color: #ffeefa;
@@ -478,7 +503,7 @@ footer p {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin: 2rem 5rem;
+  margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;

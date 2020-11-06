@@ -1,29 +1,29 @@
 //Contact page
 
+.contact-box {
+  @include box($margin: 2rem 5rem);
+  @include base-text;
+  height: 70vh;
+}
+
 .form-contents {
   @include base-text;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 80vh;
+  width: 60%;
   label {
     padding-bottom: 10px;
   }
   input {
     height: 2em;
     &::placeholder {
-      font-family: "Quicksand";
-      font-size: 18px;
-      font-weight: 400;
-      letter-spacing: 0.05em;
+      @include base-text;
       color: #bbb8b8;
     }
   }
   textarea::placeholder {
-    font-family: "Quicksand";
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
+    @include base-text;
     color: #bbb8b8;
   }
 }

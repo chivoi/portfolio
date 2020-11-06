@@ -1,7 +1,7 @@
 // Projects page
 
 .projects-box {
-  @include box($margin: 2rem 5rem);
+  @include box;
 }
 
 .projects-content {

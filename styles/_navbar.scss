@@ -74,17 +74,15 @@ label {
       position: fixed;
       left: 0;
       top: 0;
-      opacity: 1;
-      // z-index: 10;
+      z-index: 10;
       background-color: $base-light-color;
       text-align: center;
-      height: 70%;
       width: 100%;
       display: none;
       a {
         display: block;
-        border-bottom: 1px dotted $dirty-purple;
         padding: 1rem;
+        margin-top: 1rem;
       }
   }
   label {

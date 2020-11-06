@@ -1,11 +1,8 @@
 //Index page
 
 .main-text {
+  @include box($margin: 1rem 1rem);
   @include base-text;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 70vh;
 
   h1, h2 {

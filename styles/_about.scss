@@ -30,5 +30,5 @@
 .link-button {
   @include button;
   @include base-text($font-weight:bold);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
