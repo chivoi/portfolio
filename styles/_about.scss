@@ -40,7 +40,7 @@
   @include base-text($font-size:20px);
   background-color: $text-bg-color;
   // margin-bottom: 1rem;
-  padding: 0.01em 1em;
+  padding: 0.01em 0.5em;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -66,4 +66,7 @@
   @include button;
   @include base-text($font-weight:bold);
   margin-top: 2rem;
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 }

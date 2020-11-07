@@ -6,7 +6,6 @@
   height: 70vh;
 
   h1, h2 {
-    color: #141439;
     text-align: center;
   }
 }
@@ -14,4 +13,7 @@
 .works-button {
   @include button;
    margin-top: 1.5rem;
+   @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 }

@@ -14,7 +14,6 @@
   height: 70vh;
 }
 .main-text h1, .main-text h2 {
-  color: #141439;
   text-align: center;
 }
 
@@ -44,8 +43,13 @@
   font-size: 1.2em;
   text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  .works-button {
+    font-size: 15px;
+  }
+}
 
-.blog-box {
+.blog-box, .blog-nav {
   margin: 2rem 5rem;
   border-radius: 15px;
   display: flex;
@@ -55,12 +59,16 @@
   justify-content: center;
 }
 @media screen and (max-width: 1200px) {
-  .blog-box {
+  .blog-box, .blog-nav {
     margin: 0 2rem;
   }
 }
 
 .blog-previews {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -149,16 +157,20 @@
 }
 @media screen and (max-width: 819px) and (min-width: 720px) {
   .category {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 }
-@media screen and (max-width: 719px) and (min-width: 300px) {
+@media screen and (max-width: 719px) and (min-width: 100px) {
   .category {
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 }
 
 .category-date, .category-date-blogpost {
+  font-family: "Quicksand";
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   text-align: right;
 }
 
@@ -183,7 +195,7 @@
 }
 @media screen and (max-width: 600px) {
   .blog-post-box {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 }
 .blog-post-box h1 {
@@ -195,21 +207,20 @@
   border-radius: 15px;
   width: 75%;
 }
+@media screen and (max-width: 600px) {
+  .blog-post-img {
+    width: 95%;
+  }
+}
 
 .category-date-blogpost {
+  font-size: 1em;
   display: inline;
   align-self: flex-end;
   margin: 10px 0;
 }
 
 .blog-nav {
-  margin: 2rem 16rem;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -219,6 +230,48 @@
 }
 .blog-nav img:hover {
   filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px #141439);
+}
+.blog-nav .back-button {
+  border-radius: 10px;
+  border: 1px solid #3f4064;
+  height: 2rem;
+  width: fit-content;
+  background-color: #141439;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  align-self: center;
+  justify-self: center;
+}
+.blog-nav .back-button:hover {
+  background-color: #ffeefa;
+  transition: 0.5s;
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px #aaaaaa;
+  border: 1px solid #141439;
+}
+.blog-nav .back-button a {
+  color: #ffeefa;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blog-nav .back-button a:hover {
+  color: #141439;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .blog-nav .back-button {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .blog-nav .back-button {
+    font-size: 12px;
+    margin-top: 0.7em;
+  }
 }
 
 .nav-header {
@@ -249,6 +302,12 @@
   .nav-socials img, .blog-nav img {
     width: 40px;
     margin-top: 0.2em;
+  }
+}
+@media screen and (max-width: 300px) {
+  .nav-socials img, .blog-nav img {
+    width: 27px;
+    margin-top: 0.7em;
   }
 }
 
@@ -335,6 +394,10 @@ body {
 }
 
 h1 {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
   font-size: 2em;
 }
 @media screen and (max-width: 800px) {
@@ -345,6 +408,24 @@ h1 {
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1em;
   }
 }
 
@@ -553,7 +634,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 0.01em 1em;
+  padding: 0.01em 0.5em;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -617,6 +698,11 @@ footer p {
   color: #141439;
   font-size: 1.2em;
   text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .link-button {
+    font-size: 15px;
+  }
 }
 
 .resume-box {
@@ -745,13 +831,18 @@ footer p {
 }
 
 .projects-box {
-  margin: 2rem 16rem;
+  margin: 0 5rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  width: 80%;
 }
 
 .projects-content {
@@ -760,19 +851,21 @@ footer p {
   align-items: center;
   justify-content: space-around;
   margin-top: 1rem;
+  background-color: red;
 }
 
 .project-preview-odd, .project-preview-even {
-  height: 315px;
+  height: 500px;
   display: flex;
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid black;
   border-radius: 15px;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
 }
 .project-preview-odd img, .project-preview-even img {
-  width: 500px;
+  height: 450px;
   overflow: hidden;
   margin: 0 0.5rem;
   border-radius: 15px;
@@ -797,6 +890,10 @@ footer p {
   text-decoration: underline;
   color: #61008d;
 }
+.project-preview-odd #portfolio-image, .project-preview-even #portfolio-image {
+  border: 1px dotted #141439;
+  border-radius: 15px;
+}
 .project-preview-odd #portfolio-image:hover, .project-preview-even #portfolio-image:hover {
   opacity: 0.75;
 }
@@ -806,7 +903,6 @@ footer p {
 }
 
 .text-description {
-  height: 315px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

@@ -11,7 +11,7 @@
     }
   
   @media screen and (max-width: 600px) {
-      margin: 0 2rem;
+      margin: 0 1rem;
     }
   h1 {
     text-align: center;
@@ -21,22 +21,15 @@
 .blog-post-img {
   margin-bottom: 15px;
   border-radius: 15px;
-  width: 75%
-  // @media screen and (max-width: 1200px) {
-  //   margin: 1rem 10rem;
-  // }
-
-  // @media screen and (max-width: 800px) {
-  //     margin: 0 5rem;
-  //   }
-
-  // @media screen and (max-width: 600px) {
-  //     margin: 0 2rem;
-  //   }
+  width: 75%;
+  @media screen and (max-width: 600px){
+    width: 95%;
+  }
 }
 
 .category-date-blogpost {
   @extend .category-date;
+  font-size: 1em;
   display: inline;
   align-self: flex-end;
   margin: 10px 0;
@@ -46,15 +39,30 @@
 
 .blog-nav {
   @extend .nav-socials;
-  @include box;
+  @extend .blog-box;
   flex-direction: row;
   justify-content: space-evenly;
   // arrows
   img {
     background-color: white;
     border-radius: 10px;
+    &:hover {
+      filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px $base-dark-color);
+    }
   }
-  img:hover {
-    filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px $base-dark-color);
+  // Button
+  .back-button {
+    @include button;
+    @include base-text($font-weight:bold);
+    align-self: center;
+    justify-self:center;
+    // margin-top: 2rem;
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 12px;
+      margin-top: 0.7em;
+    }
   }
 }
