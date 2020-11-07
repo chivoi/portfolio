@@ -1,7 +1,7 @@
 //Index page
 
 .main-text {
-  @include box($margin: 1rem 1rem);
+  @include box($margin: 1rem 1rem 3rem 1rem);
   @include base-text;
   height: 70vh;
 

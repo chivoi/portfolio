@@ -1,9 +1,20 @@
 //Contact page
 
 .contact-box {
-  @include box($margin: 2rem 5rem);
+  @include box($margin:2rem  16rem);
   @include base-text;
   height: 70vh;
+  @media screen and (max-width: 1200px) {
+    margin: 1rem 10rem 2rem 10rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 0 5rem 2.5rem 5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin: 0 2rem 2rem 2rem;
+  }
 }
 
 .form-contents {
@@ -13,7 +24,11 @@
   flex-wrap: wrap;
   width: 60%;
   label {
-    padding-bottom: 10px;
+    display: inline-block;
+    width: fit-content;
+    padding: 0.2em 0.2em;
+    border-radius: 7px;
+    background-color: $text-bg-color
   }
   input {
     height: 2em;
@@ -25,6 +40,12 @@
   textarea::placeholder {
     @include base-text;
     color: #bbb8b8;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 700px) {
+    width: 85%;
   }
 }
 

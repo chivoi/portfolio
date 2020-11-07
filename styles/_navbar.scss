@@ -20,13 +20,32 @@
     width: 50px;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: 850px) {
+      width: 40px;
+      margin-top: 0.2em;
+    }
   }
 }
 
-// Navigation menu - desktop
+// Navigation menu
 .menu {
   width: 65%;
   margin-top: 1rem;
+  // Hamburger menu icon
+  label {
+    width: 26px;
+    float: right;
+    margin: 0 0.5rem 0 0;
+    font-size: 26px;
+    line-height: 1.5rem;
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+      position: relative;
+      z-index: 11;
+      cursor: pointer;
+    }
+  }  
 }
 
 .menu-items {
@@ -44,33 +63,14 @@
       transition: 0.3s;
       transform: translateY(-2px);
       text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px #141439;
-      // text-shadow: 1px 1px #3f4064;
       transition-timing-function: ease-out;
     }
+    @media screen and (max-width: 850px) {
+      font-size: 1em;
+    }
   }
-}
-
-// Hamburger menu
-
-label {
-  width: 26px;
-  float: right;
-  margin: 0 0.5rem 0 0;
-  font-size: 26px;
-  line-height: 1.5rem;
-  display: none;
-}
-
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .menu-items {
-  display: block;
-}
-
-@media only screen and (max-width: 800px) {
-    .menu-items {
+  // Drop down menu on smaller screens
+  @media only screen and (max-width: 600px) {
       position: fixed;
       left: 0;
       top: 0;
@@ -85,11 +85,12 @@ label {
         margin-top: 1rem;
       }
   }
-  label {
-    display: block;
-    position: relative;
-    z-index: 11;
-    cursor: pointer;
-  }
 }
 
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu-items {
+  display: block;
+}

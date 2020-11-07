@@ -6,8 +6,36 @@
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 800px) {
+    width: 250px;
+    height: 250px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
+//Main content container 
+.about-box {
+  @include box($margin: 2rem 16rem);
+
+  @media screen and (max-width: 1200px) {
+      margin: 1rem 10rem;
+    }
+  
+  @media screen and (max-width: 800px) {
+      margin: 0 5rem;
+    }
+  
+  @media screen and (max-width: 600px) {
+      margin: 0 2rem;
+    }
+}
+
+// Text container
 .text-area {
   @include base-text($font-size:20px);
   background-color: $text-bg-color;
@@ -18,15 +46,22 @@
   border-radius: 15px;
   p {
     margin: 0.5em;
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
   button {
     align-self: center;
   }
   a {
     @include loose-link;
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
 }
 
+// Button
 .link-button {
   @include button;
   @include base-text($font-weight:bold);

@@ -34,18 +34,19 @@
     <section class="contact-box">
       <h1>Get in touch!</h1>
       <div class="form-contents">
-        <form>
+        <form action="https://formspree.io/f/xbjpyelw"
+        method="POST">
           <div class="contact-name">
               <label for "name">Name: </label>
               <input type="text" id="name" placeholder="Type your name"></input>
           </div>
            <div class="contact-email">
               <label for "email">Email: </label>
-              <input type="text" id="email" placeholder="example@email.com" size="30"></input>
+              <input type="text" name="_replyto" id="email" placeholder="example@email.com" size="30"></input>
           </div>
           <div class="contact-message">
               <label for "message">Message: </label>
-              <textarea id="message" placeholder="Hey Ana, ..." rows="3"></textarea>
+              <textarea name="message" id="message" placeholder="Hey Ana, ..." rows="3"></textarea>
           </div>
           <div class="contact-submit">
               <input type="submit" class="submit-button"></input>

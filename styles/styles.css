@@ -4,7 +4,7 @@
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 3rem 1rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -170,10 +170,32 @@
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 850px) {
+  .nav-socials img, .blog-nav img {
+    width: 40px;
+    margin-top: 0.2em;
+  }
+}
 
 .menu {
   width: 65%;
   margin-top: 1rem;
+}
+.menu label {
+  width: 26px;
+  float: right;
+  margin: 0 0.5rem 0 0;
+  font-size: 26px;
+  line-height: 1.5rem;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .menu label {
+    display: block;
+    position: relative;
+    z-index: 11;
+    cursor: pointer;
+  }
 }
 
 .menu-items {
@@ -195,25 +217,12 @@
   text-shadow: 1px 1px whitesmoke, 0 0 25px #ff00b7, 0 0 5px #141439;
   transition-timing-function: ease-out;
 }
-
-label {
-  width: 26px;
-  float: right;
-  margin: 0 0.5rem 0 0;
-  font-size: 26px;
-  line-height: 1.5rem;
-  display: none;
+@media screen and (max-width: 850px) {
+  .menu-items a {
+    font-size: 1em;
+  }
 }
-
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .menu-items {
-  display: block;
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .menu-items {
     position: fixed;
     left: 0;
@@ -229,14 +238,16 @@ label {
     padding: 1rem;
     margin-top: 1rem;
   }
-
-  label {
-    display: block;
-    position: relative;
-    z-index: 11;
-    cursor: pointer;
-  }
 }
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu-items {
+  display: block;
+}
+
 body {
   background-image: url("../images/bg.jpg");
   background-color: white;
@@ -291,7 +302,7 @@ footer p {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin: 2rem 5rem;
+  margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -303,6 +314,21 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.05em;
   height: 70vh;
+}
+@media screen and (max-width: 1200px) {
+  .contact-box {
+    margin: 1rem 10rem 2rem 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-box {
+    margin: 0 5rem 2.5rem 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-box {
+    margin: 0 2rem 2rem 2rem;
+  }
 }
 
 .form-contents {
@@ -316,7 +342,11 @@ footer p {
   width: 60%;
 }
 .form-contents label {
-  padding-bottom: 10px;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.2em 0.2em;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .form-contents input {
   height: 2em;
@@ -334,6 +364,16 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #bbb8b8;
+}
+@media screen and (max-width: 1000px) {
+  .form-contents {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form-contents {
+    width: 85%;
+  }
 }
 
 .contact-name, .contact-message, .contact-email, .contact-submit {
@@ -388,6 +428,47 @@ footer p {
   border-radius: 50%;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 800px) {
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-box {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 2rem 16rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .about-box {
+    margin: 1rem 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-box {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-box {
+    margin: 0 2rem;
+  }
+}
 
 .text-area {
   font-family: "Quicksand";
@@ -402,6 +483,11 @@ footer p {
 }
 .text-area p {
   margin: 0.5em;
+}
+@media screen and (max-width: 600px) {
+  .text-area p {
+    font-size: 18px;
+  }
 }
 .text-area button {
   align-self: center;
@@ -418,6 +504,11 @@ footer p {
 .text-area a:hover {
   text-decoration: underline;
   color: #61008d;
+}
+@media screen and (max-width: 600px) {
+  .text-area a {
+    font-size: 18px;
+  }
 }
 
 .link-button {
