@@ -50,7 +50,6 @@
 }
 
 @mixin box($margin: 2rem 16rem) {
-  @include base-text;
   margin: $margin;
   border-radius: 15px;
   display: flex;

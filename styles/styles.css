@@ -1,9 +1,5 @@
 @import "normalize.css";
 .main-text {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 1rem 1rem 3rem 1rem;
   border-radius: 15px;
   display: flex;
@@ -50,10 +46,6 @@
 }
 
 .blog-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 5rem;
   border-radius: 15px;
   display: flex;
@@ -170,9 +162,38 @@
   text-align: right;
 }
 
+.blog-post-box {
+  margin: 2rem 16rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .blog-post-box {
+    margin: 1rem 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .blog-post-box {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-post-box {
+    margin: 0 2rem;
+  }
+}
+.blog-post-box h1 {
+  text-align: center;
+}
+
 .blog-post-img {
   margin-bottom: 15px;
   border-radius: 15px;
+  width: 75%;
 }
 
 .category-date-blogpost {
@@ -182,10 +203,6 @@
 }
 
 .blog-nav {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
@@ -317,11 +334,21 @@ body {
   -o-background-size: cover;
 }
 
+h1 {
+  font-size: 2em;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
 .about-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
@@ -356,10 +383,6 @@ footer p {
 }
 
 .contact-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
@@ -500,10 +523,6 @@ footer p {
 }
 
 .about-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
@@ -601,10 +620,6 @@ footer p {
 }
 
 .resume-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;
@@ -730,10 +745,6 @@ footer p {
 }
 
 .projects-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   margin: 2rem 16rem;
   border-radius: 15px;
   display: flex;

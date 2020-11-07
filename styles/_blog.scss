@@ -65,6 +65,7 @@
   }
 }
 
+//Categories and dates
 .category {
   @include base-text($font-weight:bold);
   color: #f6e2fe;
@@ -85,35 +86,4 @@
 
 .category-date {
   text-align: right;
-}
-
-//Blog post pages
-
-.blog-post-img {
-  margin-bottom: 15px;
-  border-radius: 15px;
-}
-
-.category-date-blogpost {
-  @extend .category-date;
-  display: inline;
-  align-self: flex-end;
-  margin: 10px 0;
-}
-
-//Blog posts navigation
-
-.blog-nav {
-  @extend .nav-socials;
-  @include box;
-  flex-direction: row;
-  justify-content: space-evenly;
-  // arrows
-  img {
-    background-color: white;
-    border-radius: 10px;
-  }
-  img:hover {
-    filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px $base-dark-color);
-  }
 }

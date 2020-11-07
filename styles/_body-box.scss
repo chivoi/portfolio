@@ -10,6 +10,16 @@ body {
   -o-background-size: cover;
 }
 
+h1 {
+  font-size: 2em;
+  @media screen and (max-width: 800px) {
+   font-size: 1.7em;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+  }
+}
+
 // Main content container on most of the pages
 .about-box {
   @include base-text;
