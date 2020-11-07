@@ -62,6 +62,11 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .blog-box {
+    margin: 0 2rem;
+  }
+}
 
 .blog-previews {
   display: flex;
@@ -73,24 +78,61 @@
   margin: 1rem;
   border-radius: 15px;
 }
+@media screen and (max-width: 1030px) and (min-width: 820px) {
+  .blog-previews img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 819px) and (min-width: 720px) {
+  .blog-previews img {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 470px) and (min-width: 300px) {
+  .blog-previews img {
+    width: 240px;
+  }
+}
 
 .preview {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 65vh;
+  width: 430px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   margin-bottom: 15px;
 }
 .preview:hover {
-  opacity: 0.9;
+  opacity: 0.85;
   background-color: rgba(255, 238, 250, 0.9);
 }
-.preview p, .preview h2 {
+@media screen and (max-width: 1030px) and (min-width: 820px) {
+  .preview {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 819px) and (min-width: 720px) {
+  .preview {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 470px) and (min-width: 300px) {
+  .preview {
+    width: 270px;
+  }
+}
+.preview h2 {
   margin: 5px 20px 15px 20px;
-  color: #141439;
+}
+@media screen and (max-width: 1030px) {
+  .preview h2 {
+    font-size: 1.3em;
+  }
+}
+.preview p {
+  margin: 5px 20px 15px 20px;
 }
 .preview a {
   text-decoration: none;
@@ -106,6 +148,22 @@
   background-color: #3f4064;
   border: 1px dotted #ffeefa;
   border-radius: 7px;
+  padding: 0 0.2em;
+}
+@media screen and (max-width: 1030px) and (min-width: 820px) {
+  .category {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 819px) and (min-width: 720px) {
+  .category {
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 719px) and (min-width: 300px) {
+  .category {
+    font-size: 0.8em;
+  }
 }
 
 .category-date, .category-date-blogpost {
@@ -189,7 +247,7 @@
   line-height: 1.5rem;
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .menu label {
     display: block;
     position: relative;
@@ -222,7 +280,7 @@
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .menu-items {
     position: fixed;
     left: 0;
@@ -259,7 +317,7 @@ body {
   -o-background-size: cover;
 }
 
-.box {
+.about-box {
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
@@ -542,20 +600,97 @@ footer p {
   text-decoration: none;
 }
 
+.resume-box {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 2rem 16rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .resume-box {
+    margin: 1rem 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume-box {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .resume-box {
+    margin: 0 2rem;
+  }
+}
+
 .skills-icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-self: center;
+  margin-bottom: 0.5em;
 }
 .skills-icons img {
   width: 50px;
   height: 45px;
   margin-left: 0.3em;
 }
+@media screen and (max-width: 900px) {
+  .skills-icons img {
+    width: 40px;
+    height: 35px;
+  }
+}
 
 #rails {
   width: 7rem;
+}
+@media screen and (max-width: 900px) {
+  #rails {
+    width: 6rem;
+  }
+}
+
+.resume-button {
+  border-radius: 10px;
+  border: 1px solid #3f4064;
+  height: 2rem;
+  width: fit-content;
+  background-color: #141439;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+.resume-button:hover {
+  background-color: #ffeefa;
+  transition: 0.5s;
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px #aaaaaa;
+  border: 1px solid #141439;
+}
+.resume-button a {
+  color: #ffeefa;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.resume-button a:hover {
+  color: #141439;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .resume-button {
+    font-size: 15px;
+  }
 }
 
 .getintouch-button {
@@ -587,6 +722,11 @@ footer p {
   color: #141439;
   font-size: 1.2em;
   text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .getintouch-button {
+    font-size: 15px;
+  }
 }
 
 .projects-box {

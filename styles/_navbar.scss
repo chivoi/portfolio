@@ -39,7 +39,7 @@
     font-size: 26px;
     line-height: 1.5rem;
     display: none;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 720px) {
       display: block;
       position: relative;
       z-index: 11;
@@ -70,7 +70,7 @@
     }
   }
   // Drop down menu on smaller screens
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 720px) {
       position: fixed;
       left: 0;
       top: 0;

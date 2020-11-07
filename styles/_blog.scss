@@ -2,6 +2,9 @@
 
 .blog-box {
   @include box ($margin: 2rem 5rem);
+  @media screen and (max-width: 1200px) {
+    margin: 0 2rem;
+  }
 }
 
 .blog-previews {
@@ -12,6 +15,15 @@
     width: 400px;
     margin: 1rem;
     border-radius: 15px;
+    @media screen and (max-width: 1030px) and (min-width: 820px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 819px) and (min-width: 720px) {
+      width: 270px;
+    }
+    @media screen and (max-width: 470px) and (min-width: 300px) {
+      width: 240px;
+    }
   }
 }
 
@@ -21,17 +33,31 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 65vh;
+  width: 430px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   margin-bottom: 15px;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.85;
     background-color:rgba(255,238,250, 0.9);
   }
-  p, h2 {
+  @media screen and (max-width: 1030px) and (min-width: 820px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 819px) and (min-width: 720px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 470px) and (min-width: 300px) {
+    width: 270px;
+  }
+  h2 {
     margin: 5px 20px 15px 20px;
-    color: $base-dark-color;
+    @media screen and (max-width: 1030px) {
+      font-size: 1.3em;
+    }
+  }
+  p {
+    margin: 5px 20px 15px 20px;
   }
   a {
     text-decoration: none;
@@ -45,6 +71,16 @@
   background-color: #3f4064;
   border: 1px dotted $base-light-color;
   border-radius: 7px;
+  padding: 0 0.2em;
+  @media screen and (max-width: 1030px) and (min-width: 820px) {
+    font-size: 1em;
+  }
+  @media screen and (max-width: 819px) and (min-width: 720px) {
+    font-size: 0.85em;
+  }
+  @media screen and (max-width: 719px) and (min-width: 300px) {
+    font-size: 0.8em;
+  }
 }
 
 .category-date {

@@ -11,7 +11,7 @@ body {
 }
 
 // Main content container on most of the pages
-.box {
+.about-box {
   @include base-text;
   @include box;
 }
