@@ -53,16 +53,16 @@
   // Button
   .back-button {
     @include button;
-    @include base-text($font-weight:bold);
     align-self: center;
     justify-self:center;
     // margin-top: 2rem;
     @media screen and (max-width: 800px) {
       font-size: 15px;
     }
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 330px) {
       font-size: 12px;
-      margin-top: 0.7em;
+      margin: 0.7em 0;
+      height: 6vh;
     }
   }
 }

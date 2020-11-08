@@ -15,6 +15,10 @@
       margin: 0 2rem;
     }
 }
+.text-resume {
+  @extend .text-about;
+  margin-bottom: 1rem;
+}
 
 .skills-icons {
   display: flex;
@@ -43,18 +47,17 @@
 // Buttons
 .resume-button {
   @include button;
-  @include base-text($font-weight:bold);
   margin-top: 0.5rem;
+  font-size: 0.9em;
   @media screen and (max-width: 600px) {
-    font-size: 15px;
+    font-size: 0.8em;
+  }
+  a {
+    @include heading($font-size: 1em);
   }
 }
 
 .getintouch-button {
-  @include base-text;
-  @include button;
+  @extend .resume-button;
   margin-bottom: 1rem;
-  @media screen and (max-width: 600px) {
-    font-size: 15px;
-  }
 }

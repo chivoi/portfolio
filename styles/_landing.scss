@@ -2,7 +2,6 @@
 
 .main-text {
   @include box($margin: 1rem 1rem 3rem 1rem);
-  @include base-text;
   height: 70vh;
   justify-content: center;
   @media screen and (min-width: 1201px) {
@@ -20,7 +19,13 @@
       margin: 0 2rem 2rem 2rem;
     }
 
-  h1, h2 {
+  h2 {
+    @include base-text($font-size: 1.8em);
+    background-color: $text-bg-color;
+    text-align: center;
+  }
+
+  h1 {
     text-align: center;
   }
 }

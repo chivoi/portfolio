@@ -51,7 +51,7 @@
   @media screen and (max-width: 470px) and (min-width: 300px) {
     width: 270px;
   }
-  h2 {
+  h2 {;
     margin: 5px 20px 15px 20px;
     @media screen and (max-width: 1030px) {
       font-size: 1.3em;
@@ -68,7 +68,7 @@
 
 //Categories and dates
 .category {
-  @include base-text($font-weight:bold);
+  @include heading($font-size: 1.1em, $font-weight: 400);
   color: #f6e2fe;
   background-color: #3f4064;
   border: 1px dotted $base-light-color;

@@ -1,7 +1,7 @@
 // Main navigation bar
 
 .nav-header {
-  @include base-text;
+  @include heading($font-size: 1.2em, $font-weight: 500);
   display: flex;
   height: 10vh;
   justify-content: space-between;
@@ -37,6 +37,7 @@
   margin-top: 1rem;
   // Hamburger menu icon
   label {
+    color: $base-dark-color;
     width: 26px;
     float: right;
     margin: 0 0.5rem 0 0;
@@ -73,13 +74,18 @@
       font-size: 1em;
     }
   }
+
+  // .current-page-link { 
+  //   color: rgb(255, 0, 183)
+  // }
+
   // Drop down menu on smaller screens
   @media only screen and (max-width: 720px) {
       position: fixed;
       left: 0;
       top: 0;
       z-index: 10;
-      background-color: $base-light-color;
+      background-color: #fdfcfd;
       text-align: center;
       width: 100%;
       display: none;
@@ -87,6 +93,7 @@
         display: block;
         padding: 1rem;
         margin-top: 1rem;
+        color: $base-dark-color;
       }
   }
 }

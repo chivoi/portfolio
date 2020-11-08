@@ -15,6 +15,10 @@
   @media screen and (max-width: 700px) {
     margin: 0 2rem 5rem 2rem;
   }
+
+  @media screen and (max-width: 400px) {
+    margin: 0 0 5rem 0;
+  }
 }
 
 .form-contents {
@@ -36,6 +40,9 @@
       @include base-text;
       color: #bbb8b8;
     }
+    @media screen and (max-width: 300px) {
+      width: 97%;
+    }
   }
   textarea::placeholder {
     @include base-text;
@@ -47,6 +54,9 @@
   @media screen and (max-width: 700px) {
     width: 85%;
   }
+  @media screen and (max-width: 400px) {
+    width: 90%;
+  }
 }
 
 //These are form sections in each separate container
@@ -57,11 +67,11 @@
 }
 
 .submit-button {
-  @include button($background-color:#3f4064);
-  @include base-text($font-weight:bold);
+  @include button($background-color: $dirty-purple);
   color: $base-light-color;
+  width: fit-content;
   &:hover {
-    color: #141439;
+    color: $base-dark-color;
   }
 }
 
