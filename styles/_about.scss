@@ -21,7 +21,9 @@
 //Main content container 
 .about-box {
   @include box($margin: 2rem 16rem);
-
+  // @media screen and (min-width: 1800px) {
+  //     margin: 1rem 15rem;
+    // }
   @media screen and (max-width: 1200px) {
       margin: 1rem 10rem;
     }

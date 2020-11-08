@@ -4,14 +4,34 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
   height: 70vh;
+  justify-content: center;
+}
+@media screen and (min-width: 1201px) {
+  .main-text {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-text {
+    margin: 1rem 7rem 2rem 7rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-text {
+    margin: 0 5rem 2rem 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-text {
+    margin: 0 2rem 2rem 2rem;
+  }
 }
 .main-text h1, .main-text h2 {
   text-align: center;
@@ -54,9 +74,8 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
   .blog-box, .blog-nav {
@@ -179,9 +198,8 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
   .blog-post-box {
@@ -429,22 +447,12 @@ h2 {
   }
 }
 
-.about-box {
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  margin: 2rem 16rem;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+section {
+  height: 90%;
 }
 
 footer {
-  height: 10vh;
+  height: 10%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -464,13 +472,12 @@ footer p {
 }
 
 .contact-box {
-  margin: 2rem 16rem;
+  margin: 1rem 16rem 5rem 16rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
@@ -479,17 +486,17 @@ footer p {
 }
 @media screen and (max-width: 1200px) {
   .contact-box {
-    margin: 1rem 10rem 2rem 10rem;
+    margin: 1rem 10rem 5rem 10rem;
   }
 }
 @media screen and (max-width: 800px) {
   .contact-box {
-    margin: 0 5rem 2.5rem 5rem;
+    margin: 0 5rem 5rem 5rem;
   }
 }
 @media screen and (max-width: 700px) {
   .contact-box {
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem 5rem 2rem;
   }
 }
 
@@ -608,9 +615,8 @@ footer p {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
   .about-box {
@@ -710,9 +716,8 @@ footer p {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
   .resume-box {
@@ -831,43 +836,60 @@ footer p {
 }
 
 .projects-box {
-  margin: 0 5rem;
+  margin: 1rem 15rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  width: 80%;
+}
+@media screen and (max-width: 1620px) {
+  .projects-box {
+    margin: 1rem 7rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .projects-box {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects-box {
+    margin: 0 0.2rem;
+  }
 }
 
 .projects-content {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-top: 1rem;
-  background-color: red;
 }
 
 .project-preview-odd, .project-preview-even {
-  height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.85);
-  border: 2px solid black;
   border-radius: 15px;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
 }
+@media screen and (max-width: 750px) {
+  .project-preview-odd, .project-preview-even {
+    flex-direction: column-reverse;
+  }
+}
 .project-preview-odd img, .project-preview-even img {
-  height: 450px;
+  width: 100%;
   overflow: hidden;
-  margin: 0 0.5rem;
   border-radius: 15px;
 }
 .project-preview-odd img:hover, .project-preview-even img:hover {
@@ -890,27 +912,59 @@ footer p {
   text-decoration: underline;
   color: #61008d;
 }
+@media screen and (max-width: 800px) {
+  .project-preview-odd a, .project-preview-even a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 750px) {
+  .project-preview-odd p, .project-preview-even p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1835px) {
+  .project-preview-odd h2, .project-preview-even h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project-preview-odd h2, .project-preview-even h2 {
+    font-size: 1.2em;
+  }
+}
 .project-preview-odd #portfolio-image, .project-preview-even #portfolio-image {
+  width: 100%;
   border: 1px dotted #141439;
   border-radius: 15px;
 }
 .project-preview-odd #portfolio-image:hover, .project-preview-even #portfolio-image:hover {
   opacity: 0.75;
 }
+.project-preview-odd .ruby-icon, .project-preview-even .ruby-icon {
+  width: 9%;
+}
+@media screen and (max-width: 750px) {
+  .project-preview-odd .ruby-icon, .project-preview-even .ruby-icon {
+    width: 7%;
+    align-self: flex-end;
+    margin-right: 1rem;
+  }
+}
 
 .project-preview-even {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 750px) {
+  .project-preview-even {
+    flex-direction: column-reverse;
+  }
 }
 
 .text-description {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-left: 1rem;
-}
-
-.heading-icons {
-  display: inline;
+  padding-left: 1.5rem;
 }
 
 .project-icons {
@@ -920,12 +974,16 @@ footer p {
   align-self: flex-start;
 }
 .project-icons img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 20%;
   margin-left: 0.3em;
 }
 .project-icons img:hover {
   opacity: inherit;
+}
+@media screen and (max-width: 800px) {
+  .project-icons img {
+    width: 15%;
+  }
 }
 
 @font-face {
