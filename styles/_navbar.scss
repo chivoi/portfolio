@@ -67,7 +67,7 @@
       color: white;
       transition: 0.3s;
       transform: translateY(-2px);
-      text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px #141439;
+      text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px $base-dark-color;
       transition-timing-function: ease-out;
     }
     @media screen and (max-width: 850px) {
@@ -75,9 +75,16 @@
     }
   }
 
-  // .current-page-link { 
-  //   color: rgb(255, 0, 183)
-  // }
+  .current-page-link { 
+    a {
+      color: rgb(175, 0, 126);
+      text-decoration: overline;
+      &:hover {
+        color: $base-light-color;
+        text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px $base-dark-color;
+      }
+    }
+  }
 
   // Drop down menu on smaller screens
   @media only screen and (max-width: 720px) {

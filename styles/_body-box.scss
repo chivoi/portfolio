@@ -50,7 +50,7 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  @include base-text($font-size: 13px);
+  @include heading ($font-size: 0.7em, $font-weight: normal);
   p {
     display: inline-block;
     height: 1.5em;

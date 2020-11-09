@@ -32,9 +32,9 @@
 .main-text h2 {
   font-family: "Lato", sans-serif;
   font-size: 1.8em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
 }
@@ -95,9 +95,9 @@
 .blog-previews {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -124,6 +124,8 @@
 }
 
 .preview {
+  border-right: 1px dotted #3f4064;
+  border-bottom: 1px dotted #3f4064;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -198,9 +200,9 @@
 .category-date, .category-date-blogpost {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   text-align: right;
 }
 
@@ -387,6 +389,14 @@
     font-size: 1em;
   }
 }
+.menu-items .current-page-link a {
+  color: #af007e;
+  text-decoration: overline;
+}
+.menu-items .current-page-link a:hover {
+  color: #ffeefa;
+  text-shadow: 1px 1px whitesmoke, 0 0 25px #ff00b7, 0 0 5px #141439;
+}
 @media only screen and (max-width: 720px) {
   .menu-items {
     position: fixed;
@@ -473,11 +483,10 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.7em;
+  font-weight: normal;
+  letter-spacing: 0.05em;
 }
 footer p {
   display: inline-block;
@@ -497,9 +506,9 @@ footer p {
   justify-content: flex-start;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   height: 70vh;
 }
 @media screen and (max-width: 1200px) {
@@ -526,9 +535,9 @@ footer p {
 .form-contents {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -547,9 +556,9 @@ footer p {
 .form-contents input::placeholder {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   color: #bbb8b8;
 }
 @media screen and (max-width: 300px) {
@@ -560,9 +569,9 @@ footer p {
 .form-contents textarea::placeholder {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   color: #bbb8b8;
 }
 @media screen and (max-width: 1000px) {
@@ -671,45 +680,45 @@ footer p {
   }
 }
 
-.text-about, .text-resume {
+.text-about, .text-resume, .text-blog {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 0.01em 0.5em;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
 }
-.text-about p, .text-resume p {
+.text-about p, .text-resume p, .text-blog p {
   margin: 0.5em;
 }
 @media screen and (max-width: 600px) {
-  .text-about p, .text-resume p {
+  .text-about p, .text-resume p, .text-blog p {
     font-size: 18px;
   }
 }
-.text-about button, .text-resume button {
+.text-about button, .text-resume button, .text-blog button {
   align-self: center;
 }
-.text-about a, .text-resume a {
+.text-about a, .text-resume a, .text-blog a {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   font-size: 20px;
   text-decoration: none;
   color: #4359bd;
 }
-.text-about a:hover, .text-resume a:hover {
+.text-about a:hover, .text-resume a:hover, .text-blog a:hover {
   text-decoration: underline;
   color: #61008d;
 }
 @media screen and (max-width: 600px) {
-  .text-about a, .text-resume a {
+  .text-about a, .text-resume a, .text-blog a {
     font-size: 18px;
   }
 }
@@ -862,9 +871,9 @@ footer p {
   justify-content: flex-start;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
 }
 @media screen and (max-width: 1620px) {
   .projects-box {
@@ -892,6 +901,8 @@ footer p {
 }
 
 .project-preview-odd, .project-preview-even {
+  border-right: 1px dotted #3f4064;
+  border-bottom: 1px dotted #3f4064;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -919,12 +930,12 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
-  line-height: 1.5 em;
+  line-height: 1.5em;
   font-size: 20px;
   text-decoration: none;
   color: #4359bd;

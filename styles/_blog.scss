@@ -30,6 +30,7 @@
 
 //Container for each blog post preview
 .preview {
+  @include base-border;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

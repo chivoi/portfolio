@@ -18,6 +18,10 @@
   }
 }
 
+.text-blog {
+  @extend .text-about;
+}
+
 .blog-post-img {
   margin-bottom: 15px;
   border-radius: 15px;
