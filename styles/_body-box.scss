@@ -1,7 +1,7 @@
 //Background for all pages 
 body {
   background-image: url("../images/bg-plain.jpg");
-  background-color: white;
+  background-color: $base-light-color;
   background-repeat: no-repeat;
   background-position: fixed;
   background-attachment: fixed;

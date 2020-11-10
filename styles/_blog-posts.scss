@@ -46,6 +46,7 @@
   @extend .blog-box;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
   // arrows
   img {
     background-color: $base-light-color;

@@ -108,14 +108,15 @@
   flex-wrap: wrap;
   align-self: flex-start;
   img {
-    width: 20%;
-    // height: 2.5rem;
+    width: 45px;
+    height: 45px;
     margin-left: 0.3em;
     &:hover {
       opacity: inherit;
     }
     @media screen and (max-width: 800px) {
-      width: 15%;
+      width: 35px;
+      height: 35px;
       }
   }
 }

@@ -280,6 +280,7 @@
 .blog-nav {
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 .blog-nav img {
   background-color: #ffeefa;
@@ -456,7 +457,7 @@
 
 body {
   background-image: url("../images/bg-plain.jpg");
-  background-color: white;
+  background-color: #ffeefa;
   background-repeat: no-repeat;
   background-position: fixed;
   background-attachment: fixed;
@@ -772,7 +773,7 @@ footer p {
   height: 2rem;
   width: fit-content;
   background-color: #3f4064;
-  margin-top: 2rem;
+  margin: 2rem 0 1rem 0;
 }
 .link-button:hover {
   background-color: white;
@@ -1051,7 +1052,8 @@ footer p {
   align-self: flex-start;
 }
 .project-icons img {
-  width: 20%;
+  width: 45px;
+  height: 45px;
   margin-left: 0.3em;
 }
 .project-icons img:hover {
@@ -1059,7 +1061,8 @@ footer p {
 }
 @media screen and (max-width: 800px) {
   .project-icons img {
-    width: 15%;
+    width: 35px;
+    height: 35px;
   }
 }
 
