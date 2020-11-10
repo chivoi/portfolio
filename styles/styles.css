@@ -1012,11 +1012,13 @@ footer p {
 }
 .project-preview-odd #portfolio-image, .project-preview-even #portfolio-image {
   width: 100%;
-  border: 1px dotted #141439;
   border-radius: 15px;
 }
 .project-preview-odd #portfolio-image:hover, .project-preview-even #portfolio-image:hover {
   opacity: 0.75;
+}
+.project-preview-odd #portfolio-image img, .project-preview-even #portfolio-image img {
+  border: 1px dotted #141439;
 }
 .project-preview-odd .ruby-icon, .project-preview-even .ruby-icon {
   width: 9%;
