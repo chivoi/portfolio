@@ -8,21 +8,21 @@
 	display: inline-block;
 }
 
-@mixin base-text ($font-size: 18px, $font-weight: 400) {
+@mixin base-text ($font-size: 18px, $font-weight: 400, $color: #141439) {
   font-family: "Lato", sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
   letter-spacing: 0.04em;
   line-height: 1.5em;
-  color: $base-dark-color;
+  color: $color;
 }
 
-@mixin heading ($font-size: 2.5em, $font-weight: bold) {
+@mixin heading ($font-size: 2.5em, $font-weight: bold, $color: #141439) {
   font-family: "Quicksand", sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
   letter-spacing: 0.05em;
-  color: $base-dark-color;
+  color: $color;
 }
 
 @mixin form-items-padding {
@@ -34,8 +34,8 @@
   border-bottom: 1px dotted $dirty-purple;
 }
 
-@mixin button($background-color: #141439) { 
-    @include heading($font-size: 1em, $font-weight: bold);
+@mixin button($background-color: $dirty-purple) { 
+    @include heading($font-size: 1em, $font-weight: bold, $color: #ffeefa);
     border-radius: 10px;
     border: 1px solid  #3f4064;
     height: 2rem;
@@ -43,7 +43,7 @@
     background-color: $background-color;
 
     &:hover {
-      background-color: $base-light-color;
+      background-color: white;
       transition: 0.5s;
       transform: translateY(-2px);
       box-shadow: 2px 2px 2px #aaaaaa;
@@ -51,7 +51,7 @@
     }
 
     a {
-      color: $base-light-color;
+      color: white;
       font-size: 1.20em;
       font-weight: bold;
       text-decoration: none;

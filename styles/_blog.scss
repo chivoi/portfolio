@@ -2,8 +2,12 @@
 
 .blog-box {
   @include box ($margin: 2rem 5rem);
+  // background-color: red;
   @media screen and (max-width: 1200px) {
     margin: 0 2rem;
+  }
+  @media screen and (max-width: 470px) {
+    margin: 0;
   }
 }
 
@@ -20,10 +24,10 @@
       width: 300px;
     }
     @media screen and (max-width: 819px) and (min-width: 720px) {
-      width: 270px;
+      width: 90%;
     }
     @media screen and (max-width: 470px) and (min-width: 300px) {
-      width: 240px;
+      width: 90%;
     }
   }
 }
@@ -44,13 +48,13 @@
     background-color:rgba(255,238,250, 0.9);
   }
   @media screen and (max-width: 1030px) and (min-width: 820px) {
-    width: 330px;
+    width: 21rem;
   }
   @media screen and (max-width: 819px) and (min-width: 720px) {
-    width: 300px;
+    width: 18rem;
   }
   @media screen and (max-width: 470px) and (min-width: 300px) {
-    width: 270px;
+    width: 90%;
   }
   h2 {;
     margin: 5px 20px 15px 20px;

@@ -48,7 +48,8 @@
   justify-content: space-evenly;
   // arrows
   img {
-    background-color: white;
+    background-color: $base-light-color;
+    @include base-border;
     border-radius: 10px;
     &:hover {
       filter: invert(1) sepia(1) hue-rotate(270deg) drop-shadow(2px 2px 2px $base-dark-color);

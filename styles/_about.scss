@@ -21,9 +21,6 @@
 //Main content container 
 .about-box {
   @include box($margin: 2rem 16rem);
-  // @media screen and (min-width: 1800px) {
-  //     margin: 1rem 15rem;
-    // }
   @media screen and (max-width: 1200px) {
       margin: 1rem 10rem;
     }
@@ -40,7 +37,7 @@
 // Text container
 .text-about {
   @include base-text($font-size:20px);
-  background-color: $text-bg-color;
+  // background-color: $text-bg-color;
   padding: 0.01em 0.5em;
   display: flex;
   flex-direction: column;

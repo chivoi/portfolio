@@ -1,4 +1,16 @@
 @import "normalize.css";
+#index-background {
+  background-image: url("../images/bg.jpg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 .main-text {
   margin: 1rem 1rem 3rem 1rem;
   border-radius: 15px;
@@ -35,6 +47,7 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
 }
@@ -47,22 +60,23 @@
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #ffeefa;
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
-  background-color: #141439;
+  background-color: #3f4064;
   margin-top: 1.5rem;
 }
 .works-button:hover {
-  background-color: #ffeefa;
+  background-color: white;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
 .works-button a {
-  color: #ffeefa;
+  color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
@@ -78,6 +92,10 @@
   }
 }
 
+.index-footer p {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
 .blog-box, .blog-nav {
   margin: 2rem 5rem;
   border-radius: 15px;
@@ -91,6 +109,11 @@
     margin: 0 2rem;
   }
 }
+@media screen and (max-width: 470px) {
+  .blog-box, .blog-nav {
+    margin: 0;
+  }
+}
 
 .blog-previews {
   font-family: "Lato", sans-serif;
@@ -98,6 +121,7 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -114,12 +138,12 @@
 }
 @media screen and (max-width: 819px) and (min-width: 720px) {
   .blog-previews img {
-    width: 270px;
+    width: 90%;
   }
 }
 @media screen and (max-width: 470px) and (min-width: 300px) {
   .blog-previews img {
-    width: 240px;
+    width: 90%;
   }
 }
 
@@ -141,17 +165,17 @@
 }
 @media screen and (max-width: 1030px) and (min-width: 820px) {
   .preview {
-    width: 330px;
+    width: 21rem;
   }
 }
 @media screen and (max-width: 819px) and (min-width: 720px) {
   .preview {
-    width: 300px;
+    width: 18rem;
   }
 }
 @media screen and (max-width: 470px) and (min-width: 300px) {
   .preview {
-    width: 270px;
+    width: 90%;
   }
 }
 .preview h2 {
@@ -175,6 +199,7 @@
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 0.05em;
+  color: #141439;
   color: #f6e2fe;
   background-color: #3f4064;
   border: 1px dotted #ffeefa;
@@ -203,6 +228,7 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   text-align: right;
 }
 
@@ -256,7 +282,9 @@
   justify-content: space-evenly;
 }
 .blog-nav img {
-  background-color: white;
+  background-color: #ffeefa;
+  border-right: 1px dotted #3f4064;
+  border-bottom: 1px dotted #3f4064;
   border-radius: 10px;
 }
 .blog-nav img:hover {
@@ -267,23 +295,24 @@
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #ffeefa;
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
-  background-color: #141439;
+  background-color: #3f4064;
   align-self: center;
   justify-self: center;
 }
 .blog-nav .back-button:hover {
-  background-color: #ffeefa;
+  background-color: white;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
 .blog-nav .back-button a {
-  color: #ffeefa;
+  color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
@@ -311,6 +340,7 @@
   font-size: 1.2em;
   font-weight: 500;
   letter-spacing: 0.05em;
+  color: #141439;
   display: flex;
   height: 10vh;
   justify-content: space-between;
@@ -425,9 +455,10 @@
 }
 
 body {
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg-plain.jpg");
   background-color: white;
   background-repeat: no-repeat;
+  background-position: fixed;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -440,6 +471,7 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #141439;
   margin: 1em 0;
 }
 @media screen and (max-width: 800px) {
@@ -458,6 +490,7 @@ h2 {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #141439;
   margin: 1em 0 0.5em 0;
   border-radius: 15px;
   font-size: 1.8em;
@@ -487,13 +520,13 @@ footer {
   font-size: 0.7em;
   font-weight: normal;
   letter-spacing: 0.05em;
+  color: #141439;
 }
 footer p {
   display: inline-block;
   height: 1.5em;
   padding: 0.2em 0.2em 0 0.2em;
   margin: 0 1rem 1rem 0;
-  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 7px;
 }
 
@@ -509,6 +542,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   height: 70vh;
 }
 @media screen and (max-width: 1200px) {
@@ -538,6 +572,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -548,7 +583,6 @@ footer p {
   width: fit-content;
   padding: 0.2em 0.2em;
   border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.85);
 }
 .form-contents input {
   height: 2em;
@@ -559,6 +593,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   color: #bbb8b8;
 }
 @media screen and (max-width: 300px) {
@@ -572,6 +607,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   color: #bbb8b8;
 }
 @media screen and (max-width: 1000px) {
@@ -601,23 +637,24 @@ footer p {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #ffeefa;
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
   background-color: #3f4064;
-  color: #ffeefa;
+  color: white;
   width: fit-content;
 }
 .submit-button:hover {
-  background-color: #ffeefa;
+  background-color: white;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
 .submit-button a {
-  color: #ffeefa;
+  color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
@@ -686,7 +723,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
-  background-color: rgba(255, 255, 255, 0.85);
+  color: #141439;
   padding: 0.01em 0.5em;
   display: flex;
   flex-direction: column;
@@ -709,6 +746,7 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   font-size: 20px;
   text-decoration: none;
   color: #4359bd;
@@ -728,22 +766,23 @@ footer p {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #ffeefa;
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
-  background-color: #141439;
+  background-color: #3f4064;
   margin-top: 2rem;
 }
 .link-button:hover {
-  background-color: #ffeefa;
+  background-color: white;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
 .link-button a {
-  color: #ffeefa;
+  color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
@@ -820,23 +859,24 @@ footer p {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #ffeefa;
   border-radius: 10px;
   border: 1px solid #3f4064;
   height: 2rem;
   width: fit-content;
-  background-color: #141439;
+  background-color: #3f4064;
   margin-top: 0.5rem;
   font-size: 0.9em;
 }
 .resume-button:hover, .getintouch-button:hover {
-  background-color: #ffeefa;
+  background-color: white;
   transition: 0.5s;
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #aaaaaa;
   border: 1px solid #141439;
 }
 .resume-button a, .getintouch-button a {
-  color: #ffeefa;
+  color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
@@ -856,6 +896,8 @@ footer p {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: #141439;
+  color: white;
 }
 
 .getintouch-button {
@@ -874,6 +916,7 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
 }
 @media screen and (max-width: 1620px) {
   .projects-box {
@@ -931,11 +974,13 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+  color: #141439;
   font-size: 20px;
   text-decoration: none;
   color: #4359bd;
