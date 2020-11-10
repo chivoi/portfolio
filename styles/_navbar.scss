@@ -59,7 +59,7 @@
   align-items: center;
   a {
     clear: right;
-    color:  #141439;
+    color:  $base-dark-color;
     text-decoration: none;
     padding-right: 1rem;
     font-size: 1.20em;
@@ -92,7 +92,7 @@
       left: 0;
       top: 0;
       z-index: 10;
-      background-color: #fdfcfd;
+      background-color: $base-light-color;
       text-align: center;
       width: 100%;
       display: none;
