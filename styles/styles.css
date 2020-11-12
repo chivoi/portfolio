@@ -281,6 +281,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  width: 90%;
 }
 .blog-nav img {
   background-color: #ffeefa;
@@ -350,6 +351,14 @@
 
 .nav-socials, .blog-nav {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
 }
 .nav-socials a:hover, .blog-nav a:hover {
   transition: 0.3s;
