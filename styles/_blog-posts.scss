@@ -62,7 +62,6 @@
     @include button;
     align-self: center;
     justify-self:center;
-    // margin-top: 2rem;
     @media screen and (max-width: 800px) {
       font-size: 15px;
     }
@@ -70,6 +69,14 @@
       font-size: 12px;
       margin: 0.7em 0;
       height: 6vh;
+    }
+    a {
+      @include heading($font-size: 1em);
+      color: white;
+      &:hover {
+        transform: none;
+        font-size: 1em;
+      }
     }
   }
 }

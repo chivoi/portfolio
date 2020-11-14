@@ -34,11 +34,13 @@
 @media screen and (max-width: 800px) {
   .main-text {
     margin: 0 5rem 2rem 5rem;
+    height: 82vh;
   }
 }
 @media screen and (max-width: 600px) {
   .main-text {
     margin: 0 2rem 2rem 2rem;
+    height: 78vh;
   }
 }
 .main-text h2 {
@@ -61,11 +63,14 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #ffeefa;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #3f4064;
-  height: 2rem;
   width: fit-content;
   background-color: #3f4064;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
   margin-top: 1.5rem;
 }
 .works-button:hover {
@@ -298,11 +303,14 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #ffeefa;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #3f4064;
-  height: 2rem;
   width: fit-content;
   background-color: #3f4064;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
   align-self: center;
   justify-self: center;
 }
@@ -335,6 +343,18 @@
     margin: 0.7em 0;
     height: 6vh;
   }
+}
+.blog-nav .back-button a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #141439;
+  color: white;
+}
+.blog-nav .back-button a:hover {
+  transform: none;
+  font-size: 1em;
 }
 
 .nav-header {
@@ -563,6 +583,7 @@ footer p {
 @media screen and (max-width: 800px) {
   .contact-box {
     margin: 0 5rem 5rem 5rem;
+    height: 84vh;
   }
 }
 @media screen and (max-width: 700px) {
@@ -572,7 +593,9 @@ footer p {
 }
 @media screen and (max-width: 400px) {
   .contact-box {
-    margin: 0 0 5rem 0;
+    margin: 0 5rem;
+    height: 85vh;
+    margin: 2rem 0;
   }
 }
 
@@ -648,11 +671,14 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #ffeefa;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #3f4064;
-  height: 2rem;
   width: fit-content;
   background-color: #3f4064;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
   color: white;
   width: fit-content;
 }
@@ -777,11 +803,14 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #ffeefa;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #3f4064;
-  height: 2rem;
   width: fit-content;
   background-color: #3f4064;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
   margin: 2rem 0 1rem 0;
 }
 .link-button:hover {
@@ -824,11 +853,13 @@ footer p {
 @media screen and (max-width: 800px) {
   .resume-box {
     margin: 0 5rem;
+    height: 85vh;
   }
 }
 @media screen and (max-width: 600px) {
   .resume-box {
     margin: 0 2rem;
+    height: 90%;
   }
 }
 
@@ -870,13 +901,16 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #ffeefa;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 12px;
   border: 1px solid #3f4064;
-  height: 2rem;
   width: fit-content;
   background-color: #3f4064;
+  display: flex;
+  align-items: center;
+  padding: 0.1em 0.5em;
   margin-top: 0.5rem;
-  font-size: 0.9em;
+  align-self: center;
 }
 .resume-button:hover, .getintouch-button:hover {
   background-color: white;
@@ -903,11 +937,14 @@ footer p {
 }
 .resume-button a, .getintouch-button a {
   font-family: "Quicksand", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #141439;
   color: white;
+}
+.resume-button a:hover, .getintouch-button a:hover {
+  font-size: 0.9em;
 }
 
 .getintouch-button {

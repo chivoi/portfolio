@@ -34,13 +34,16 @@
   border-bottom: 1px dotted $dirty-purple;
 }
 
-@mixin button($background-color: $dirty-purple) { 
-    @include heading($font-size: 1em, $font-weight: bold, $color: #ffeefa);
-    border-radius: 10px;
-    border: 1px solid  #3f4064;
-    height: 2rem;
+@mixin button($background-color: $dirty-purple, $padding: 0.5em) { 
+    @include heading($font-size: 1em, $font-weight: bold, $color: $base-light-color);
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid  $dirty-purple;
     width: fit-content;
     background-color: $background-color;
+    display: flex;
+    align-items: center;
+    padding: $padding;
 
     &:hover {
       background-color: white;
@@ -69,7 +72,6 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 }

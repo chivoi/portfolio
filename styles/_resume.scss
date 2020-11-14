@@ -48,15 +48,18 @@
 
 // Buttons
 .resume-button {
-  @include button;
+  @include button($padding: 0.1em 0.5em);
   margin-top: 0.5rem;
-  font-size: 0.9em;
+  align-self: center;
   @media screen and (max-width: 600px) {
     font-size: 0.8em;
   }
   a {
-    @include heading($font-size: 1em);
+    @include heading($font-size: 0.9em);
     color: white;
+    &:hover {
+      font-size: 0.9em;
+    }
   }
 }
 
