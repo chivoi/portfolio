@@ -59,16 +59,48 @@ Contact</br>
 
 ### Desktop
 Landing page<br/>
-![Landing page](./screenshots/mockups/landing.jpg)<br/>
+![Landing page](./screenshots/index.png)<br/>
 About</br>
-![About](./screenshots/mockups/about.jpg)</br>
+![About](./screenshots/about.png)![About-scroll view](./screenshots/about2.png)</br>
 Projects</br>
-![Projects](./screenshots/mockups/projects.jpg)</br>
+![Projects](./screenshots/projects.png)![Projects-scroll view](./screenshots/projects2.png)</br>
 Blog</br>
-![Blog](./screenshots/mockups/blog.jpg)</br>
+![Blog](./screenshots/blog.png)![Blog-scroll view](./screenshots/blog2.png)</br>
 Blog Post</br>
-![Blog Post](./screenshots/mockups/blog-post.jpg)</br>
+![Blog Post](./screenshots/blog-post.png)![Blog Post-scroll view](./screenshots/blog-post2.png)</br>
 Resume</br>
-![Resume](./screenshots/mockups/resume.jpg)</br>
+![Resume](./screenshots/resume.png)</br>
 Contact</br>
-![Contact](./screenshots/mockups/contact.jpg)</br>
+![Contact](./screenshots/contact.png)</br>
+
+### Mobile
+Landing page<br/>
+![Landing page](./screenshots/mobile/index.png)<br/>
+About</br>
+![About](./screenshots/mobile/about.png)</br>
+Projects</br>
+![Projects](./screenshots/mobile/projects.png)</br>
+Blog</br>
+![Blog](./screenshots/mobile/blog.png)</br>
+Blog Post</br>
+![Blog Post](./screenshots/mobile/blog-post.png)</br>
+Resume</br>
+![Resume](./screenshots/mobile/resume.png)</br>
+Contact</br>
+![Contact](./screenshots/mobile/contact.png)</br>
+
+### Tablet
+Landing page<br/>
+![Landing page](./screenshots/tablet/index.jpg)<br/>
+About</br>
+![Landing page](./screenshots/tablet/about.jpg)</br>
+Projects</br>
+![Projects](./screenshots/tablet/projects.jpg)</br>
+Blog</br>
+![Blog](./screenshots/tablet/blog.jpg)</br>
+Blog Post</br>
+![Blog Post](./screenshots/tablet/blog-post.jpg)</br>
+Resume</br>
+![Resume](./screenshots/tablet/resume.jpg)</br>
+Contact</br>
+![Contact](./screenshots/tablet/contact.jpg)</br>
