@@ -56,7 +56,7 @@
   @media screen and (max-width: 470px) and (min-width: 300px) {
     width: 90%;
   }
-  h2 {;
+  h2 {
     margin: 5px 20px 15px 20px;
     @media screen and (max-width: 1030px) {
       font-size: 1.3em;
@@ -75,7 +75,7 @@
 .category {
   @include heading($font-size: 1.1em, $font-weight: 400);
   color: #f6e2fe;
-  background-color: #3f4064;
+  background-color: $dirty-purple;
   border: 1px dotted $base-light-color;
   border-radius: 7px;
   padding: 0 0.2em;
