@@ -1,5 +1,12 @@
 //Index page
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #index-background {
   background-image: url("../images/bg.jpg");
   background-color: white;
@@ -64,9 +71,11 @@
 }
 
 .loading-text {
+  font-family: 'Quicksand', sans-serif;
   position: relative;
-  top: 100px;
-  left: 100px;
-  font-size: 100px;
+  bottom: 50vh;
+  left: 50vw;
+  z-index: 5;
+  font-size: 30px;
   color: $base-dark-color;
 }
