@@ -79,9 +79,8 @@
     }
   }
   .ruby-icon {
-    width: 9%;
+    width: 7%;
     @media screen and (max-width: 750px) {
-      width: 7%;
       align-self: flex-end;
       margin-right: 1rem;
     }
@@ -98,10 +97,11 @@
 
 .text-description {
   // height: 315px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-left: 1.5rem;
+  padding: 0 0.7rem 0 1.5rem;
 }
 
 .project-icons {
@@ -110,8 +110,8 @@
   flex-wrap: wrap;
   align-self: flex-start;
   img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     margin-left: 0.3em;
     &:hover {
       opacity: inherit;
