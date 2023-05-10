@@ -14,7 +14,7 @@ It also has the purpose of representing myself online for the tech community, as
 ### **Overview**
 The site consists of 11 pages in total, including index, the set of 5 second level pages (about, contact etc.) and 5 pages containing blog posts
 
-![Sitemap](./screenshots/Sitemap.png)
+![Sitemap](./doc/screenshots/Sitemap.png)
 ### **Components**
 * The common _**navigation bar**_ is present on all the pages, and consists of 2 x parts: links to social media, as well as the main menu. The main menu collapses into a hamburger menu icon and a drop down menu on smaller screens. 
 * Common components also include _**footer**_ with the copyright statement. 
@@ -38,69 +38,79 @@ For this website, it's potential employers, collaborators and a general tech com
 ## Screenshots
 
 ### Trello Board half way in the works
-![Trello board](./screenshots/Trello.jpg)
-
+![Trello board](./doc/screenshots/Trello.jpg)
 
 ### Mockups
 Landing page<br/>
-![Landing page](./screenshots/mockups/landing.jpg)<br/>
+![Landing page](./doc/screenshots/mockups/landing.jpg)<br/>
 About</br>
-![About](./screenshots/mockups/about.jpg)</br>
+![About](./doc/screenshots/mockups/about.jpg)</br>
 Projects</br>
-![Projects](./screenshots/mockups/projects.jpg)</br>
+![Projects](./doc/screenshots/mockups/projects.jpg)</br>
 Blog</br>
-![Blog](./screenshots/mockups/blog.jpg)</br>
+![Blog](./doc/screenshots/mockups/blog.jpg)</br>
 Blog Post</br>
-![Blog Post](./screenshots/mockups/blog-post.jpg)</br>
+![Blog Post](./doc/screenshots/mockups/blog-post.jpg)</br>
 Resume</br>
-![Resume](./screenshots/mockups/resume.jpg)</br>
+![Resume](./doc/screenshots/mockups/resume.jpg)</br>
 Contact</br>
-![Contact](./screenshots/mockups/contact.jpg)</br>
+![Contact](./doc/screenshots/mockups/contact.jpg)</br>
 
-### Desktop
-Landing page<br/>
-![Landing page](./screenshots/index.png)<br/>
-About</br>
-![About](./screenshots/about.png)![About-scroll view](./screenshots/about2.png)</br>
-Projects</br>
-![Projects](./screenshots/projects.png)![Projects-scroll view](./screenshots/projects2.png)</br>
-Blog</br>
-![Blog](./screenshots/blog.png)![Blog-scroll view](./screenshots/blog2.png)</br>
-Blog Post</br>
-![Blog Post](./screenshots/blog-post.png)![Blog Post-scroll view](./screenshots/blog-post2.png)</br>
-Resume</br>
-![Resume](./screenshots/resume.png)</br>
-Contact</br>
-![Contact](./screenshots/contact.png)</br>
+### Site views
 
-### Mobile
-Landing page<br/>
-![Landing page](./screenshots/mobile/index.png)<br/>
-About</br>
-![About](./screenshots/mobile/about.png)</br>
-Projects</br>
-![Projects](./screenshots/mobile/projects.png)</br>
-Blog</br>
-![Blog](./screenshots/mobile/blog.png)</br>
-Blog Post</br>
-![Blog Post](./screenshots/mobile/blog-post.png)</br>
-Resume</br>
-![Resume](./screenshots/mobile/resume.png)</br>
-Contact</br>
-![Contact](./screenshots/mobile/contact.png)</br>
+<details>
+  <summary>Desktop</summary>
 
-### Tablet
 Landing page<br/>
-![Landing page](./screenshots/tablet/index.jpg)<br/>
+![Landing page](./doc/screenshots/Index.png)<br/>
 About</br>
-![Landing page](./screenshots/tablet/about.jpg)</br>
+![About](./doc/screenshots/About.png)![About-scroll view](./doc/screenshots/About2.png)</br>
 Projects</br>
-![Projects](./screenshots/tablet/projects.jpg)</br>
+![Projects](./doc/screenshots/Projects.png)![Projects-scroll view](./doc/screenshots/Projects2.png)</br>
 Blog</br>
-![Blog](./screenshots/tablet/blog.jpg)</br>
+![Blog](./doc/screenshots/Blog.png)![Blog-scroll view](./doc/screenshots/Blog2.png)</br>
 Blog Post</br>
-![Blog Post](./screenshots/tablet/blog-post.jpg)</br>
+![Blog Post](./doc/screenshots/Blog-post.png)![Blog Post-scroll view](./doc/screenshots/Blog-post2.png)</br>
 Resume</br>
-![Resume](./screenshots/tablet/resume.jpg)</br>
+![Resume](./doc/screenshots/Resume.png)</br>
 Contact</br>
-![Contact](./screenshots/tablet/contact.jpg)</br>
+![Contact](./doc/screenshots/Contact.png)</br>
+</details>
+
+<details>
+  <summary>Mobile</summary>
+
+Landing page<br/>
+![Landing page](./doc/screenshots/mobile/index.png)<br/>
+About</br>
+![About](./doc/screenshots/mobile/about.png)</br>
+Projects</br>
+![Projects](./doc/screenshots/mobile/projects.png)</br>
+Blog</br>
+![Blog](./doc/screenshots/mobile/blog.png)</br>
+Blog Post</br>
+![Blog Post](./doc/screenshots/mobile/blog-post.png)</br>
+Resume</br>
+![Resume](./doc/screenshots/mobile/resume.png)</br>
+Contact</br>
+![Contact](./doc/screenshots/mobile/contact.png)</br>
+
+</details>
+
+<details>
+  <summary>Tablet</summary>
+
+Landing page<br/>
+![Landing page](./doc/screenshots/tablet/index.jpg)<br/>
+About</br>
+![Landing page](./doc/screenshots/tablet/about.jpg)</br>
+Projects</br>
+![Projects](./doc/screenshots/tablet/projects.jpg)</br>
+Blog</br>
+![Blog](./doc/screenshots/tablet/blog.jpg)</br>
+Resume</br>
+![Resume](./doc/screenshots/tablet/resume.jpg)</br>
+Contact</br>
+![Contact](./doc/screenshots/tablet/contact.jpg)</br>
+
+</details>
