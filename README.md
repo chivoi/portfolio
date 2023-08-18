@@ -37,10 +37,14 @@ For this website, it's potential employers, collaborators and a general tech com
 
 ## Screenshots
 
-### Trello Board half way in the works
+### Trello Board
 ![Trello board](./doc/screenshots/Trello.jpg)
 
-### Mockups
+### Views
+
+<details>
+  <summary>Mockups</summary>
+
 Landing page<br/>
 ![Landing page](./doc/screenshots/mockups/landing.jpg)<br/>
 About</br>
@@ -56,7 +60,7 @@ Resume</br>
 Contact</br>
 ![Contact](./doc/screenshots/mockups/contact.jpg)</br>
 
-### Site views
+</details>
 
 <details>
   <summary>Desktop</summary>
