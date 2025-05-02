@@ -8,7 +8,7 @@
     <title>Ana Lastoviria: Works</title>
   </head>
   <body>
-    <header class="nav-header">
+    <header class="nav-header"">
        <!-- Social networks icons -->
       <div class="nav-socials">
       <a href="https://www.linkedin.com/in/ana-lastoviria/"><img src="../images/linkedin-icon.png" alt="linkedin icon"/></a>
@@ -16,13 +16,13 @@
       <a href="https://github.com/chivoi"><img src="../images/github-icon.png" alt="github icon"/></a>
       </div>
        <!-- Menu navigation items -->
-       <nav class="menu">
+       <nav class="menu"">
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <div class="menu-items">
           <a href="../index.html">Home</a>
-          <a href="./about.html">About</a>
           <span class="current-page-link"><a href="./projects.html">Works</a></span>
+          <a href="./about.html">About</a>
         </div>
       </nav>
     </header>
@@ -30,6 +30,19 @@
       <section class="projects-box">
           <h1>Works</h1>
           <div class="projects-content">
+            <!-- Project TicTacToe-->
+            <div class="project-preview-even">
+              <a href="https://github.com/chivoi/tictactoe" target="blank"><img src="../images/tictactoe.jpg" alt="tictactoe running screenshot"/></a>
+              <div class="text-description">
+                <h2>TicTacToe</h2>
+                <div class="project-icons">
+                  <img src="../images/python.svg" alt="python icon"/>
+                  <img src="../images/docker.svg" alt="docker icon"/>
+                </div>
+                <p>My first play with Python: a CLI app take on the TicTacToe challenge. It has the classic game functionality and some experimental features, like different game modes, semi-smart AI opponent and interactive CLI UI. Supports super easy running inside the Docker image.</p>
+                <p><a target="blank" href="https://github.com/chivoi/tictactoe">View Github repo</a></p>
+              </div>
+            </div>
             <!-- Project Toy Robot-->
             <div class="project-preview-odd">
               <a href="https://github.com/chivoi/toy-robot" target="blank"><img src="../images/toyRobot.jpg" alt="Toy Robot web page screenshot"/></a>
@@ -40,7 +53,7 @@
                 <img src="../images/typescript-icon.svg" alt="typescript icon"/>
                 <img src="../images/netlify.svg" alt="netlify icon"/>
                   </div>
-              <p>A Toy Robot challenge solution that started as a Node/TS library and then grew a React front-end. Beyond the classic commands, this robot has a 3D expansion and can fly. Built for Zendesk code club.</p>
+              <p>A Toy Robot challenge solution that started as a Node/TS library and then grew a React front-end. Beyond the classic commands, this robot has a 3D expansion and can fly.</p>
               <p><a target="blank" href="https://little-toy-robot.netlify.app/">View Site</a> / <a target="blank" href="https://github.com/chivoi/toy-robot">View Github repo</a></p></div>
                 </div>
             <!-- Project Rosie-->
@@ -106,13 +119,14 @@
             <!-- Project-->
             <div class="project-preview-even">
               <a href="https://github.com/chivoi/cassandra" target="blank"><img src="../images/cassandra.png" alt="cassandra programme screenshot"/></a>
-                <div class="text-description">
+              <div class="text-description">
                 <h2>Cassandra</h2>
                 <div class="ruby-icon"><img src="../images/ruby.svg" alt="ruby icon"/></div>
-                <Built>She is a robot fortune teller, telling your fortunes right from the CLI. <br>Built with vanilla Ruby, TDD with RSpec. Uses external REST APIs for the fortunes. Has a responsive interface and the ability to CRUD your personal fortunes diary.</p>
+                <p>She is a robot fortune teller, telling your fortunes right from the CLI. <br>Built with vanilla Ruby, TDD with RSpec. Uses external REST APIs for the fortunes. Has a responsive interface and the ability to CRUD your personal fortunes diary.</p>
                 <p>This is the first app I ever built, and had a lot of fun doing so.</p>
-                <p><a target="blank" href="https://github.com/chivoi/cassandra">View Github repo</a></p></div>
-                </div>
+                <p><a target="blank" href="https://github.com/chivoi/cassandra">View Github repo</a></p>
+              </div>
+            </div>
           </div>
       </section>
     <footer>
