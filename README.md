@@ -1,13 +1,8 @@
 # My Portfolio Website
 
-The website is viewable online [here](https://ana-lastoviria.netlify.app/).
-
-The GitHub repository can be viewed [here](https://github.com/chivoi/portfolio).
-
 ## **Purpose**
 
-This is the portfolio website made as an assigment submission at **Coder Academy**.<br/>
-It also has the purpose of representing myself online for the tech community, as well as serving as my online-resume.
+Hosting examples of my works.
 
 ## **Functionality / features**
 
