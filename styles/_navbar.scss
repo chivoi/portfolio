@@ -37,7 +37,7 @@
 
 // Navigation menu
 .menu {
-  width: 40%;
+  width: 70%;
   margin-top: 1rem;
   margin-right: 1em;
   // Hamburger menu icon
@@ -69,10 +69,10 @@
     padding-right: 1rem;
     font-size: 1.20em;
     &:hover{
-      color: white;
+      color: #cd209c;
+      font-weight: 500;
       transition: 0.3s;
       transform: translateY(-2px);
-      text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px $base-dark-color;
       transition-timing-function: ease-out;
     }
     @media screen and (max-width: 850px) {
@@ -80,14 +80,24 @@
     }
   }
 
+  .external-link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .inline-icon {
+    height: 1.2em;
+    @media screen and (max-width: 850px) {
+      font-size: 0.9em;
+    }
+
+  }
+
   .current-page-link { 
     a {
       color: rgb(175, 0, 126);
       text-decoration: overline;
-      &:hover {
-        color: $base-light-color;
-        text-shadow: 1px 1px whitesmoke, 0 0 25px rgb(255, 0, 183), 0 0 5px $base-dark-color;
-      }
     }
   }
 

@@ -7,3 +7,38 @@
 @import "about";
 @import "projects";
 @import "external-fonts";
+@import "footer";
+
+html {
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    @include base-text($font-weight: bold);
+    @include loose-link;
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+      }
+    }
+    p {
+    @media screen and (max-width: 900px) and (min-width: 750px) {
+      font-size: 0.9em;
+    }
+  }
+  h2 {
+    @media screen and (min-width: 1835px){
+      font-size: 2em;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.bullet {
+  margin-right: 0.5rem;
+}
